@@ -7,16 +7,16 @@ class GitGet < Formula
 
   if OS.mac?
     url "https://github.com/grdl/git-get/releases/download/v0.0.4/git-get_0.0.4_MacOS_x86_64.tar.gz"
-    sha256 "d274d05d4c2c16d2365666c5c0985a6ae13a48385ca61fdade578c0842527270"
+    sha256 "385b9599a69ed800b32a3ac44945cf5ce6b918f638477570bfb09fd2b4cab6e4"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/grdl/git-get/releases/download/v0.0.4/git-get_0.0.4_Linux_x86_64.tar.gz"
-      sha256 "fc0e1bde889b9eb533f40f8f656b3a625afe3a3fdcf9a2e86e56185ec34e4923"
+      sha256 "564a6e7c016665f7a05d5c4926c4e0b2fea4b08de8138eee3d3f04095632dd94"
     end
   end
 
   def install
-    bin.install "git-get"
+    bin.install "git-get", "git-list"
   end
 
   test do
