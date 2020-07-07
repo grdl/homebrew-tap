@@ -2,16 +2,16 @@
 class GitGet < Formula
   desc "Better way to clone, organize and manage multiple git repositories"
   homepage "https://github.com/grdl/git-get/"
-  version "0.0.7"
+  version "0.1.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/grdl/git-get/releases/download/v0.0.7/git-get_0.0.7_macOS_x86_64.tar.gz"
-    sha256 "f6dec40eb0ea24f876e445520f571106d38fed475f7671f99c647262366ec0fe"
+    url "https://github.com/grdl/git-get/releases/download/v0.1.0/git-get_0.1.0_macOS_x86_64.tar.gz"
+    sha256 "d0cfd6ddd3e435f7deaf442a6539b62a8deecd2350d95c9ee102ccbeb4b12880"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/grdl/git-get/releases/download/v0.0.7/git-get_0.0.7_linux_x86_64.tar.gz"
-      sha256 "c1ea4ea7f973f087992c620ba6068eebb7ea88f14a494b454e95e0d9d19882a8"
+      url "https://github.com/grdl/git-get/releases/download/v0.1.0/git-get_0.1.0_linux_x86_64.tar.gz"
+      sha256 "894be0d727db95c7ece719b04ca47bd312ec7949854d5787fd4407d01b91adef"
     end
   end
 
