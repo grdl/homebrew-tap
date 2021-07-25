@@ -5,28 +5,28 @@
 class Sample < Formula
   desc "Sample :golang: Go application to be used as a base template for other projects."
   homepage "https://github.com/grdl/sample/"
-  version "0.0.1"
+  version "0.0.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grdl/sample/releases/download/v0.0.1/sample_0.0.1_macOS_x86_64.tar.gz"
-      sha256 "acd01e12ce14f893518785829e09872b3227b85f7aa97dbb592527147c70904a"
+      url "https://github.com/grdl/sample/releases/download/v0.0.2/sample_0.0.2_macOS_x86_64.tar.gz"
+      sha256 "f87800f38f0ae23666a81a84648c1936b15a9bdbfa6d250a4a67218c028ba35c"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/grdl/sample/releases/download/v0.0.1/sample_0.0.1_macOS_arm64.tar.gz"
-      sha256 "653e40ecd3ef5aa9c509a772402dd331fbc564ece2c4c72ab9d57f1dfc51e7c7"
+      url "https://github.com/grdl/sample/releases/download/v0.0.2/sample_0.0.2_macOS_arm64.tar.gz"
+      sha256 "d627a8698df822898baed43db70e918f08ce6cc9f99cccf20cd2f708bc4ad5ba"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/grdl/sample/releases/download/v0.0.1/sample_0.0.1_linux_x86_64.tar.gz"
-      sha256 "788e18bfcc7d44e76e6b28ac861549baadc297141fe018940535549245b00d28"
+      url "https://github.com/grdl/sample/releases/download/v0.0.2/sample_0.0.2_linux_x86_64.tar.gz"
+      sha256 "f0faff04e6e199020b4a6798ef0491d68227dd897fd5a01e5da7d32f0028d663"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grdl/sample/releases/download/v0.0.1/sample_0.0.1_linux_arm64.tar.gz"
-      sha256 "a5dd2780b6e4da2385466691af81393eddeaa6a2bc1458443023b0fc21f1cc57"
+      url "https://github.com/grdl/sample/releases/download/v0.0.2/sample_0.0.2_linux_arm64.tar.gz"
+      sha256 "81c60315114e8676e380e53dbd7da39045777800fdd5c4a9181018c8e09e9f27"
     end
   end
 
