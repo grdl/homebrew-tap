@@ -11,22 +11,22 @@ class Sample < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/grdl/sample/releases/download/v0.0.3/sample_0.0.3_macOS_x86_64.tar.gz"
-      sha256 "fb2f292f81aaf57dd6f064b891be84a4a07716750e0fe38dc43bf97f1ed4d37f"
+      sha256 "ca4fc5a15a6ed30bed0ba9eca177b58a19d254012f32dadd8e62c6a2b9806e48"
     end
     if Hardware::CPU.arm?
       url "https://github.com/grdl/sample/releases/download/v0.0.3/sample_0.0.3_macOS_arm64.tar.gz"
-      sha256 "1810583ca431fedb38da5db3b2c9ed2d7e5231f77dec2f598bc453cc4138549a"
+      sha256 "4e1b6f36f2c497a9cb129da67c62acece59dfba9f110dccd49db7753cc7ca427"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/grdl/sample/releases/download/v0.0.3/sample_0.0.3_linux_x86_64.tar.gz"
-      sha256 "6ebb2dcf3ed8fe7ce0faa6082e3f1d6d0095fafd4ce0e5f6731784dd8f517514"
+      sha256 "3bb71a2b205bcc17a6e4c923c316151d760babf190807a8383ba11ddd2b9122b"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/grdl/sample/releases/download/v0.0.3/sample_0.0.3_linux_arm64.tar.gz"
-      sha256 "c056c2e905f04e6e0086eb04deea15d806f5be4189d9aa696b66fb69f5d054d0"
+      sha256 "21c958bc9a6a72cc1edc82b6fc1d583497d76d7fe1e42d28ced710b26732d10a"
     end
   end
 
