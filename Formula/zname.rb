@@ -5,20 +5,20 @@
 class Zname < Formula
   desc "Zname: search through your cloud DNS records."
   homepage "https://github.com/grdl/zname/"
-  version "0.0.1"
+  version "0.0.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grdl/zname/releases/download/v0.0.1/zname_0.0.1_macOS_x86_64.tar.gz"
-      sha256 "701a68d97ce1becb1294ea253e58b74cd80fe56cf30a6865ff9ad534418e3198"
+      url "https://github.com/grdl/zname/releases/download/v0.0.2/zname_0.0.2_macOS_x86_64.tar.gz"
+      sha256 "4dbf2696e2361fafd568a220feaf63a91c4dd243484cf02788544fdbbf13cc11"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/grdl/zname/releases/download/v0.0.1/zname_0.0.1_linux_x86_64.tar.gz"
-      sha256 "b4e274d34334795324db64eb0eca5fb5c95c88acd0187edf5757ce27b520dcc3"
+      url "https://github.com/grdl/zname/releases/download/v0.0.2/zname_0.0.2_linux_x86_64.tar.gz"
+      sha256 "bb0b7cd2d361137bf38bcf57502f3f54d9eee666fae2386e4c50ca05ba1a8d5f"
     end
   end
 
