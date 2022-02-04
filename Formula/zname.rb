@@ -6,7 +6,6 @@ class Zname < Formula
   desc "Zname: search through your cloud DNS records."
   homepage "https://github.com/grdl/zname/"
   version "0.0.2"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?

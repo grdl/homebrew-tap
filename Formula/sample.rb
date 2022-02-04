@@ -6,7 +6,6 @@ class Sample < Formula
   desc "Sample :golang: Go application to be used as a base template for other projects."
   homepage "https://github.com/grdl/sample/"
   version "0.0.3"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
