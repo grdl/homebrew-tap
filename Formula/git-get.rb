@@ -34,6 +34,6 @@ class GitGet < Formula
   end
 
   test do
-    system "git-get --version"
+    system "git-get", "--version"
   end
 end
