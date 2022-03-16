@@ -6,7 +6,6 @@ class GitGet < Formula
   desc "Better way to clone, organize and manage multiple git repositories"
   homepage "https://github.com/grdl/git-get/"
   version "0.5.0"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
@@ -35,6 +34,6 @@ class GitGet < Formula
   end
 
   test do
-    system "git-get --version"
+    system "git-get", "--version"
   end
 end
