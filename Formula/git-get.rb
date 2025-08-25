@@ -5,13 +5,13 @@
 class GitGet < Formula
   desc "Better way to clone, organize and manage multiple git repositories"
   homepage "https://github.com/grdl/git-get/"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/grdl/git-get/releases/download/v0.6.0/git-get_0.6.0_darwin_amd64vv1.tar.gz"
-    sha256 "374381eeae4bdf029791d3ebc4884fe4e0d58f2d7afcfe6f9ff93d2565a2e421"
+    url "https://github.com/grdl/git-get/releases/download/v0.6.1/git-get_0.6.1_darwin_amd64vv1.tar.gz"
+    sha256 "c6349693a0322f27cf869d16c1d40c05ee814c831828c89a29ddedb85e8e3be1"
 
     def install
       bin.install "git-get"
@@ -19,8 +19,8 @@ class GitGet < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/grdl/git-get/releases/download/v0.6.0/git-get_0.6.0_darwin_arm64.tar.gz"
-    sha256 "d60270b1aa80e45a1fb3b3ac80cea59609ff54f9708d4bfac8c1fcdd305b1420"
+    url "https://github.com/grdl/git-get/releases/download/v0.6.1/git-get_0.6.1_darwin_arm64.tar.gz"
+    sha256 "14512ee289aaceb39cac99c8720d7596c0acb133854881b016dcc4e54767e4c3"
 
     def install
       bin.install "git-get"
