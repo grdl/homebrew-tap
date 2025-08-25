@@ -1,19 +1,19 @@
 {
-    "version": "0.6.0",
+    "version": "0.6.1",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/grdl/git-get/releases/download/v0.6.0/git-get_0.6.0_windows_amd64vv1.zip",
+            "url": "https://github.com/grdl/git-get/releases/download/v0.6.1/git-get_0.6.1_windows_amd64vv1.zip",
             "bin": [
                 "git-get.exe"
             ],
-            "hash": "77370170adbf2021047b0b9bc363b5f19b308a6d28382c5fc92d333509470926"
+            "hash": "26a88754984a6df10bf64c780445181d71ba8c43cccbaa7eac3760f5abe56bb9"
         },
         "arm64": {
-            "url": "https://github.com/grdl/git-get/releases/download/v0.6.0/git-get_0.6.0_windows_arm64.zip",
+            "url": "https://github.com/grdl/git-get/releases/download/v0.6.1/git-get_0.6.1_windows_arm64.zip",
             "bin": [
                 "git-get.exe"
             ],
-            "hash": "3900843203ec27e4b7d4a859e1b0b5c474661bbfd98ee8586d8e3744cb8a8d55"
+            "hash": "1f9c99742e7c96119e05f2d873570ce817426b16011feb2612e5e81038bebbd4"
         }
     },
     "homepage": "https://github.com/grdl/git-get",
@@ -22,8 +22,5 @@
     "post_install": [
         "New-Item -ItemType HardLink -Path \"$dir\\git-list.exe\" -Target \"$dir\\git-get.exe\" -Force | Out-Null",
         "scoop shim add git-list \"$dir\\git-list.exe\""
-    ],
-    "post_uninstall": [
-      "scoop shim rm git-list"
     ]
 }
